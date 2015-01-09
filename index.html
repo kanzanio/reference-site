@@ -1,9 +1,39 @@
 <html>
-	<head>
-		<title></title>
-	</head>
-	<body>
-		<h1>Kanzan example site</h1>
-		<p data-kanzan-id="test-text" data-kanzan-type="text">Test text</p>
-	</body>
+  <head>
+    <title>Kanzan reference site</title>
+  </head>
+  <body>
+    <h1>Kanzan example site</h1>
+
+    <!-- 
+    A simple short plain text field. 
+    This will create a text input field in the the content admin site. 
+    -->
+    <h2 data-kanzan-id="site-title" data-kanzan-type="text">Test site title text</h2>
+
+
+    <!-- 
+    A longer plain text field. 
+    This will create a text area input field in the the content admin site.
+    -->
+    <div data-kanzan-type="blob" data-kanzan-id="site-intro-text" data-kanzan-label="Site intro text">
+      Some longer text which might get very long as your creative juices flow.
+    </div>
+
+    <!-- 
+    A longer text field which interprets markdown. 
+    This will create a text area input field in the the content admin site.
+    -->
+    <div data-kanzan-type="markdown" data-kanzan-id="structured-content" data-kanzan-help="Markdown is supported in this section.">
+      Oooh. Lovely [Markdown](http://daringfireball.net/projects/markdown/syntax)
+
+      Markdown is **great** for:
+
+      - simple text formatting
+      - easy links
+      - lists
+      
+    </div>
+
+  </body>
 </html>

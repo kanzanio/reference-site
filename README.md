@@ -40,7 +40,7 @@ A longer plain text field. This will create a text area input field in the the c
 ```
 <div data-kanzan-type="blob" data-kanzan-id="site-intro-text">
 	Some longer text which might get very long as your creative juices flow.
-</dive>
+</div>
 ```
 
 
@@ -52,7 +52,7 @@ A longer text field which interprets markdown. This will create a text area inpu
 
 ```
 <div data-kanzan-type="markdown" data-kanzan-id="structured-content" data-kanzan-help="Markdown is supported in this section.">
-	
+
 	Oooh. Lovely [Markdown](http://daringfireball.net/projects/markdown/syntax)
 
 </div>
