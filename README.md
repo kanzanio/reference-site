@@ -5,7 +5,9 @@ A simple reference site for a Kanzan site. This includes examples of each conten
 
 ## Declaring Kanzan content
 
-Kanzan understands HTML5 data attributes and will look for attributes that start with `data-kanzan-`. All attributes are optional except for `data-kanzan-id` and `data-kanzan-type`
+Kanzan understands HTML5 data attributes and will look for attributes that start with `data-kanzan-`. All attributes are optional except for `data-kanzan-id` and `data-kanzan-type`.
+
+All kanzan data attributes are removed from the markup when output from Kanzan.io and managed content is subsituted.
 
 
 ## Kanzan attributes
@@ -24,8 +26,6 @@ Defined by `data-kanzan-type="text"`
 
 A simple short plain text field. This will create a text input field in the the content admin site.
 
-**Example**
-
 ```
 <h1 data-kanzan-type="text" data-kanzan-id="site-title">The Site Title</h1>
 ```
@@ -37,9 +37,23 @@ Defined by `data-kanzan-type="blob"`
 
 A longer plain text field. This will create a text area input field in the the content admin site.
 
+```
+<div data-kanzan-type="blob" data-kanzan-id="site-intro-text">
+	Some longer text which might get very long as your creative juices flow.
+</dive>
+```
+
 
 ### markdown
 
 Defined by `data-kanzan-type="markdown"`
 
 A longer text field which interprets markdown. This will create a text area input field in the the content admin site.
+
+```
+<div data-kanzan-type="markdown" data-kanzan-id="structured-content" data-kanzan-help="Markdown is supported in this section.">
+	
+	Oooh. Lovely [Markdown](http://daringfireball.net/projects/markdown/syntax)
+
+</div>
+```
