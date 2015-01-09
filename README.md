@@ -24,10 +24,11 @@ Defined by `data-kanzan-type="text"`
 
 A simple short plain text field. This will create a text input field in the the content admin site.
 
-#### Example:
-'''
+**Example**
+
+```
 <h1 data-kanzan-type="text" data-kanzan-id="site-title">The Site Title</h1>
-'''
+```
 
 
 ### blob
