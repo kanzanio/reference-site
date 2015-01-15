@@ -1,0 +1,16 @@
+body {
+	font-family: sans-serif;
+}
+
+div,
+p {
+	margin: 16px;
+}
+
+img {
+	width: 300px;
+}
+
+.attr {
+	display: block;
+}
